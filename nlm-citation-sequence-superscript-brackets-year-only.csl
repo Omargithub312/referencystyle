@@ -111,7 +111,7 @@
     <choose>
       <if type="article-journal article-magazine review review-book" match="any">
         <group suffix=" ">
-          <text variable="container-title" form="short" strip-periods="true"/>
+           <text variable="container-title-short" font-weight="bold"/>
           <choose>
             <if variable="URL">
               <text term="internet" prefix=" [" suffix="]" text-case="capitalize-first"/>
@@ -120,7 +120,7 @@
         </group>
       </if>
       <else>
-        <text variable="container-title" form="short"/>
+        <text variable="container-title" form="short" font-weight="bold"/>
       </else>
     </choose>
   </macro>
